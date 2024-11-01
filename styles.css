@@ -1,0 +1,47 @@
+* {
+    border: 1px solid black; 
+    }
+
+body {
+    font-family: ; 
+    min-height: 100vh; 
+    margin: 0; 
+    display: flex; 
+    box-sizing: border-box;
+    flex-direction: column; 
+}
+
+.topSection {
+    display: flex; 
+    flex-direction: row; 
+    width: 100%; 
+    height: 72px; 
+}
+
+.header {
+    display: flex; 
+    justify-content: flex-start;
+}
+
+.headerLinks {
+    display: flex; 
+    justify-content: flex-end;
+    flex-direction: row; 
+    flex: 1; 
+    gap: 1em; 
+}
+
+.subHeader {
+    display: flex; 
+    flex-direction: row; 
+}
+
+.body1 {
+    display: flex; 
+    flex-direction: column;  
+}
+
+.imageContainer {
+    display: flex; 
+    flex-direction: row; 
+}
