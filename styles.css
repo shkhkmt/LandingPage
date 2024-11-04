@@ -1,26 +1,40 @@
-* {
+/** {
     border: 1px solid black; 
     }
-
+*/
 body {
-    font-family: ; 
+    font-family: Roboto, "Helvetica Neue", Optima;   
     min-height: 100vh; 
     margin: 0; 
     display: flex; 
     box-sizing: border-box;
+    flex-direction: column;
+    flex: 1;
+    padding: 0; 
+}
+
+.body0 {
+    padding: 0 9em; 
+    background-color: #1F2937;
+    display: flex; 
     flex-direction: column; 
+    flex; 1; 
+}
+
+.headerDiv {
+    display: flex; 
 }
 
 .topSection {
     display: flex; 
     flex-direction: row; 
     width: 100%; 
-    height: 72px; 
 }
 
 .header {
     display: flex; 
     justify-content: flex-start;
+    align-items: center; 
 }
 
 .headerLinks {
@@ -29,19 +43,240 @@ body {
     flex-direction: row; 
     flex: 1; 
     gap: 1em; 
+    color: #E5E7EB;
+}
+
+ul.headerLinks {
+    text-decoration: none; 
+    list-style: none;
+    font-size:18px;
+    font-size: 18px; 
+}
+
+a {
+    text-decoration: none; 
 }
 
 .subHeader {
     display: flex; 
     flex-direction: row; 
+    justify-content: center; ; 
+    color: #E5E7EB; 
+    padding: 4em 0;
+}
+
+.headerLogo {
+    display: flex; 
+    align-items: center; 
+    font-size: 24px; 
+    color: #F9FAF8; 
+    font-weight: 600; 
+}
+
+.heroMainText {
+    font-size: 48px;  
+    font-weight: 900;
+    color: #F9FAF8; 
+}
+
+.headerSubtext {
+    font-size: 18px; 
+    color: #E5E7EB; 
+}
+
+.headerImage{
+    display: flex; 
+    height: 10em; 
+    width: 100%; 
+}
+
+.leftHeader button {
+    border-radius: 5px; 
+    color: #F9FAF8; 
+    background-color: #3882F6; 
+    padding: 0.5em 2em; 
+    border: 1px solid #2882F6;
+}
+
+.leftHeader {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start; 
+    width: 50%; 
+}
+
+.rightHeader{
+    display: flex;
+    width:50%;
+    height: 100%; 
+}
+
+.headerImage img {
+    width: 100%
+}
+
+.body0 {
+    display: flex; 
+    flex-direction: column; 
+    flex: 1; 
 }
 
 .body1 {
     display: flex; 
-    flex-direction: column;  
+    flex-direction: column; 
+    flex: 1; 
+    justify-content: center;
+    padding: 0; 
+}
+
+.body1 p { 
+    padding: 0 ; 
 }
 
 .imageContainer {
     display: flex; 
     flex-direction: row; 
+    justify-content: center; 
+    gap: 0 4em; 
+    border-radius: 25px; 
+    flex-wrap: wrap;
 }
+
+.imageContainer img {
+    height: 150px; 
+    width: 150px;
+    border: 2px solid #3882F6;
+    border-radius: 20px; 
+}
+
+.contentBox {
+    display: flex; 
+    flex-direction: column; 
+    width: 150px; 
+}
+
+#informationHeader {
+    font-size: 36px; 
+    color: #1F2937; 
+    font-weight: 900; 
+}
+
+.body2 {
+    display: flex; 
+    flex: 1;
+    flex-direction: column; 
+    padding 0 7em; 
+    background-color:#E5E7EB; 
+}
+
+.quoteContainer {
+    display: flex; 
+    padding: 2em 7em; 
+    flex-direction: column;
+    flex:1; 
+    align-items: center; 
+}
+
+#quoteText {
+    font-size: 36px; 
+    font-style: italic;
+    font-weight: 300;
+    display: flex; 
+    flex-wrap: wrap; 
+    color: #1F2937;
+}
+
+#author {
+    display: flex; 
+    justify-content: flex-end; 
+    font-size: 18px; 
+    font-weight: 700; 
+}
+
+.body3 {
+    display: flex; 
+    flex-direction: column; 
+    flex: 1; 
+}
+
+.background3 {
+    display: flex; 
+    flex-direction: row; 
+    padding:2em 7em;
+    justify-content: space-around; 
+    align-items: center; 
+}
+
+.callToAction {
+    padding:0 2em; 
+}
+
+.actionContainer {
+    background-color: #3882F6; 
+    display: flex; 
+    gap: 4em;
+    padding: 0 5em; 
+    height: 100px;
+    box-sizing: border-box; 
+    border-radius: 15px; 
+}
+
+button.callToActionButton {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-self: center; 
+    border-radius: 5px; 
+    border: 1px solid #F9FAF8; 
+    color: #F9FAF8;
+    font-weight:300; 
+    background-color: #3882F6; 
+    padding: 0.25em 1em; 
+}
+
+.callToAction {
+    color: #F9FAF8; 
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.callout {
+    font-size: 18px; 
+    font-weight: 400;
+    margin: 0; 
+}
+
+.action {
+    font-size: 14px; 
+    font-weight: 100; 
+    margin: 0;
+}
+
+.footer {
+    background-color: #1F2937; 
+    display: flex; 
+    justify-content: center; 
+    font-size: 14px; 
+    color: #E5E7EB; 
+    height: 72px; 
+}
+
+a:visited, 
+a:hover, 
+a:active, 
+a:link {
+    color: #E5E7EB; 
+}
+
+.body1 p {
+    display: flex; 
+    justify-content: center; 
+}
+
+.contentImage {
+    border-radius: 15px; 
+}
+
