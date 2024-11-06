@@ -63,6 +63,9 @@ a {
     justify-content: center; ; 
     color: #E5E7EB; 
     padding: 4em 0;
+    flex-wrap: wrap; 
+    gap: 1em; 
+    flex-basis: 50% 50%;
 }
 
 .headerLogo {
@@ -88,6 +91,7 @@ a {
     display: flex; 
     height: 10em; 
     width: 100%; 
+    flex: 1; 
 }
 
 .leftHeader button {
@@ -103,22 +107,27 @@ a {
     flex-direction: column;
     align-items: flex-start; 
     width: 50%; 
+    flex: 1; 
+    padding-left: 3em; 
 }
 
 .rightHeader{
     display: flex;
     width:50%;
-    height: 100%; 
+    flex-direction: column; 
+    height:border-box; 
+    flex-shrink: 2; 
 }
 
 .headerImage img {
-    width: 100%
+    width: 100%;
 }
 
 .body0 {
     display: flex; 
     flex-direction: column; 
     flex: 1; 
+    flex-wrap: wrap; 
 }
 
 .body1 {
@@ -207,9 +216,6 @@ a {
     align-items: center; 
 }
 
-.callToAction {
-    padding:0 2em; 
-}
 
 .actionContainer {
     background-color: #3882F6; 
